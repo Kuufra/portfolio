@@ -586,4 +586,7 @@ span {
         width: 500px;
         height: 400px;
     }
+    .blender-button {
+        margin: 270px auto;
+    }
 }
