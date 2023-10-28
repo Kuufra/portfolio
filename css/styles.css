@@ -517,6 +517,7 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 450px) {
@@ -541,11 +542,13 @@ span {
 
 
 /* PROYECTOS */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .blender {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 4rem;
     width: 700px;
     height: 500px;
     background-image: url("../images/licuadoraApagada.png");
@@ -567,5 +570,20 @@ span {
 .licuadora {
     font-size: 4rem;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 11rem;
+}
+
+@media (max-width: 617px) {
+    .licuadora {
+        font-size: 3rem;
+    }
+    .blender {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 450px) {
+    .blender {
+        width: 500px;
+        height: 400px;
+    }
 }
